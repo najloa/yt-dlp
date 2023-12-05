@@ -149,7 +149,7 @@ def make_ssl_context(
         # 6. https://github.com/yt-dlp/yt-dlp/commit/5b9f253fa0aee996cf1ed30185d4b502e00609c4#commitcomment-89054368
         context.set_ciphers(
             '@SECLEVEL=2:ECDH+AESGCM:ECDH+CHACHA20:ECDH+AES:DHE+AES:!aNULL:!eNULL:!aDSS:!SHA1:!AESCCM')
-        context.minimum_version = ssl.TLSVersion.TLSv1_2
+        context.minimum_version = ssl.TLSVersion.TLSv1_3
 
     if client_certificate:
         try:
